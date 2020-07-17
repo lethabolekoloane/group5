@@ -1,0 +1,377 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        html, body{
+            height: 100%;
+            font-family: 'Josefin Sans', sans-serif;
+            background: whitesmoke;
+        
+            width: 100%;
+        }
+
+        .container{
+            min-height: 100%;
+        }
+        .main{
+            overflow: auto;
+            padding-bottom: 100px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*-------FOOTER----------------------------------FOOTER------------------------------------------------*/
+        .footer{
+            background-color: skyblue;
+            position: relative;
+            height: 100px;
+            margin-top: -45px;
+            clear: both;
+        } 
+        .main-footer-container{
+            display: flex;
+            align-items:center ;
+
+        }
+        .fot{
+            cursor: pointer;
+            /* padding: 40px 40px; */
+            margin-left: 1000px; 
+            /* display: flex; */
+        }
+
+        .main-footer-container ul{
+
+            flex-grow: 1;
+            text-align: end;
+        
+
+        }
+        .footer-nav{
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav img{
+            width: 30px;
+            height: 30px;
+
+        }
+        .nav li{
+
+            display: inline;
+            padding: .25em 0;
+        }
+         /*-------HEADER----------------------------------HEADER------------------------------------------------*/
+        
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: darkgrey;
+
+        }
+        /*-------NAVIGATION----------------------------------NAVIGATION------------------------------------------------*/
+        
+        .logo{
+            
+        order: 3;
+        margin-left: auto;
+        border: 2px solid none;
+
+        border-radius: 55px 25px;
+        }
+
+        nav{
+            order: 1;
+        }
+        .nav_links{ 
+            list-style: none;   
+        }
+
+        .nav_links li{
+            display: inline;
+            padding: 0px 20px;
+        }
+
+        .nav_links li a{
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav_links li a:hover {
+        color: #00889a;
+        } 
+        
+        /*-------ABOUT US----------------------------------ABOUT US------------------------------------------------*/
+        @import url('https://fonts.googleapis.com/css2?family=Allura|Josefin+Sans');
+
+
+        .wrapper{
+            margin-top: 10%;
+        }
+        .wrapper h1{
+            font-family: 'Allura', cursive;
+            font-size: 52px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .team{
+            display: flex;
+            text-align: center;
+            width: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .team .team_member{
+            background: #fff;
+            margin: 5px;
+            margin-bottom:  50px;
+            width: 300px;
+            padding: 20px;
+            line-height: 20px;
+            color: #8e8b8b;
+            position: relative;
+        }
+        .team .team_member h3{
+            color: #81c644;
+            font-size: 26px;
+            margin-top: 50px;
+        }
+        .team .team_member p.Role{
+            color: #ccc;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 12px 0;
+        }
+        .team .team_member .team_image{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            transform: translateX(-50%);
+        
+        }
+        .team .team_member .team_image img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            padding: 10px;
+            align-items: center;
+        }
+        .media h5{
+            color: #81c644;
+            font-size: 26px;
+            margin-top: 50px;
+        }
+        .media li{
+            position: centre;
+            top: 10%;
+            left: 15%;
+            padding-left: 2px;
+        }
+        /*-------SIDEBAR STYLING----------------------------------SIDEBAR STYLING--------------------------------------*/
+        
+
+        .sidebar{
+            position: relative;
+            right: -25;
+            width: 250px;
+            height: 100%;
+            background-color: black;
+            min-height: 100%;
+            overflow: auto;
+            padding-bottom: 100px;
+            transition:all .5s ease;
+        }
+        .sidebar header{
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: darkgray;
+            user-select: none;
+            padding-left: 40px;
+            transition: .2s;
+
+        }
+        .sidebar ul a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 20px;
+            color: white;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid black;
+            transition: .2s;
+
+        }
+        ul li:hover a{
+            padding-left: 50px;
+        }
+        .sidebar ul a i{
+            margin-right: 16px;
+        }
+
+        #check{
+            display: none;
+        }
+
+        label #btn, label #cancel{
+            position: absolute;
+            cursor: pointer;
+            background: white;
+            border-radius: 3px;
+        }
+        label #btn{
+            left: 40px;
+            top: 25px;
+            font-size: 35px;
+            color: white;
+            pad: 6px 12px;
+            transition:all .5s ;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -194px;
+            top: 19px;
+            font-size: 30px;
+            color: red;
+            padding :4px 9px ;
+        }
+
+        #check:checked~.sidebar{
+            left: 0;
+        }
+
+        #check:checked~label #btn{
+            left: 250px;
+            opacity: 0 ;
+            pointer-events: none;
+        }
+        #check:checked~label #cancel{
+            left: 194;
+
+        }
+
+    
+    .font5{
+        display: flexbox;
+        text-align: justify;
+        /* background-color:#ffe4e1; */
+    }
+    .icons{
+        margin:10px 10px;
+        /* padding: 1%; */
+    }
+    .team_member{
+        border: 2px solid none;
+
+        border-radius: 55px 25px;
+    }
+
+    .team_image:hover{
+        color-interpolation-filters: auto;
+        cursor: pointer;
+
+    }
+
+         /*-------CONTACTFORM----------------------------------CONTACT FORM--------------------------------------------*/
+        
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            font-family: 'Roboto' , sans-serif;
+        }
+
+        body{
+            background-image: url("paper.gif");
+
+
+        }
+        .wrap{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            padding: 0 20px;
+
+        }
+        .contact-form{
+            max-width: 550px;
+            margin: 0 auto;
+            background-color: rgba(0, 0,0, 0.8);
+            padding: 30px;
+            border-radius: 5px;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0,0, 0.13);
+        }
+        .input-fields{
+
+            display: flex;
+            flex-direction: column;
+        margin-right: 4%;
+        }
+
+        .input-fields,
+        .mssg{
+            width: 48%;
+        }
+
+        .input-fields .input,
+        .mssg textarea {
+            margin: 10px 0;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid #c5cfdc;
+            padding: 10px;
+            color:#c5cfdc;
+            width: 100%;
+        }
+        .mssg textarea {
+            height: 212px;
+        }
+
+        ::-webkit-input-placeholder{
+            color:#c5cfdc;
+        }
+
+        ::-moz-input-placeholder{
+            color:#c5cfdc;
+        }
+
+        ::-ms-input-placeholder{
+            color:#c5cfdc;
+        }
+        .btn{
+        background: #39b7dd;
+        text-align: center;
+        padding: 15px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        }
+
+        @media screen and  (max-width: 600px){
+
+            .contact-form{
+                flex-direction: column;
+            }
+            .mssg textarea{
+                height: 80px;
+            }
+            .input-fields,
+            .mssg{
+                width: 100%;
+            }
+
+        }
